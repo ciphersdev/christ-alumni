@@ -2449,3 +2449,21 @@ width: 40rem;
     margin: 0px 30px 30px 30px;
   }
 }
+.gender-field{
+
+  clear: none;
+}
+.gender-field input{
+  width: 25px;
+  float: left;
+}
+.gender-field label{
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  font-size: 16px;
+  float: left;
+  clear: none;
+  display: block;
+  padding: 19px 2em 0 6px;
+
+}
