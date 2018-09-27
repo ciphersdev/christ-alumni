@@ -2467,3 +2467,12 @@ width: 40rem;
   padding: 19px 2em 0 6px;
 
 }
+.s-header__logo-img-shrink{
+  width: 16%;
+}
+.s-header__logo-img{
+  width: 25%;
+}
+.events img{
+  height: 235px;
+}
