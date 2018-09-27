@@ -1613,7 +1613,7 @@ fieldset[disabled] .s-btn {
 }
 
 .s-header__shrink .s-header__navbar {
-  background: #fff;
+  background: #000;
 }
 
 .s-header__shrink .s-header__logo-img-default {
@@ -1630,7 +1630,7 @@ fieldset[disabled] .s-btn {
 }
 
 .s-header__shrink .s-header__trigger-icon {
-  background: #222324;
+  background: #fff;
 }
 
 /*----------------------------------
