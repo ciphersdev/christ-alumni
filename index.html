@@ -356,7 +356,7 @@
                             <span class="g-font-size-30--xs g-font-weight--700 g-color--white">November 2018</span>
                         </div>
                         <p class="g-font-size-18--xs g-color--white-opacity g-margin-b-40--xs">We aim high at being focused on building relationships with our clients and community. Working together on the daily requires each individual to let the greater good of the team’s work surface above their own ego.</p>
-                        <a href="http://keenthemes.com/" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50 g-padding-x-50--xs g-margin-b-20--xs">Find out More</a>
+                       <!-- <a href="http://keenthemes.com/" class="text-uppercase s-btn s-btn&#45;&#45;md s-btn&#45;&#45;white-brd g-radius&#45;&#45;50 g-padding-x-50&#45;&#45;xs g-margin-b-20&#45;&#45;xs">Find out More</a>-->
                     </div>
                     <div class="col-md-7 g-hor-centered-row__col g-margin-b-80--xs">
                         <form class="center-block s-promo-block-v2__form g-width-100-percent--xs g-width-400--sm g-bg-color--dark-light g-padding-x-50--xs g-padding-y-80--xs g-radius--4">
@@ -832,10 +832,10 @@
                                 <li><a class="g-font-size-15--xs g-color--white-opacity" href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes">Terms &amp; Conditions</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 s-footer__logo g-padding-y-50--xs g-padding-y-0--md">
-                            <h3 class="g-font-size-18--xs g-color--white">Megakit</h3>
-                            <p class="g-color--white-opacity">We are a creative studio focusing on culture, luxury, editorial &amp; art. Somewhere between sophistication and simplicity.</p>
-                        </div>
+                       <!-- <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 s-footer__logo g-padding-y-50&#45;&#45;xs g-padding-y-0&#45;&#45;md">
+                            <h3 class="g-font-size-18&#45;&#45;xs g-color&#45;&#45;white">Megakit</h3>
+                            <p class="g-color&#45;&#45;white-opacity">We are a creative studio focusing on culture, luxury, editorial &amp; art. Somewhere between sophistication and simplicity.</p>
+                        </div>-->
                     </div>
                 </div>
             </div>
@@ -921,6 +921,14 @@
             }, 1000);
         </script>
 
+        <script>
+            $(".s-header-bg-overlay nav li").click(function (e) {
+                /*e.preventDefault();*/
+                $(".s-header-bg-overlay").removeClass("-is-open");
+                $(".navbar-fixed-top").removeClass("-is-open");
+                $(".s-header__trigger").removeClass("-is-active");
+            })
+        </script>
         <!--========== END JAVASCRIPTS ==========-->
 
     </body>
