@@ -49,7 +49,7 @@
                             <!-- Logo -->
                             <div class="s-header__logo">
                                 <a href="index.html" class="s-header__logo-link">
-                                    <img class="s-header__logo-img s-header__logo-img-default" src="pics/logo.png" alt="Megakit Logo">
+                                    <img class="s-header__logo-img s-header__logo-img-default logo_1" src="pics/logo.png" alt="Megakit Logo">
                                     <img class="s-header__logo-img s-header__logo-img-shrink" src="pics/logo.png" alt="Megakit Logo">
                                 </a>
                             </div>
@@ -175,10 +175,13 @@
             <a href="javascript:void(0);" class="s-swiper__arrow-v1--left s-icon s-icon--md s-icon--white-brd g-radius--circle ti-angle-left js__swiper-btn--prev"></a>
             <!-- End Arrows -->
             
-            <!--<a href="#js__scroll-to-section" class="s-scroll-to-section-v1&#45;&#45;bc g-margin-b-15&#45;&#45;xs">
+          <!--  <a href="#js__scroll-to-section" class="s-scroll-to-section-v1&#45;&#45;bc g-margin-b-15&#45;&#45;xs">
                 <span class="g-font-size-18&#45;&#45;xs g-color&#45;&#45;white ti-angle-double-down"></span>
                 <p class="text-uppercase g-color&#45;&#45;white g-letter-spacing&#45;&#45;3 g-margin-b-0&#45;&#45;xs">Learn More</p>
             </a>-->
+            <div class="s-scroll-to-section-v1--bc g-margin-b-15--xs" style="width: 100%">
+            <h1 class="text-uppercase g-letter-spacing--3 g-margin-b-0--xs" id="demo"></h1>
+            </div>
         </div>
         <!--========== END SWIPER SLIDER ==========-->
 
@@ -886,6 +889,37 @@
         <script type="text/javascript" src="js/components/parallax.min.js"></script>
         <script type="text/javascript" src="js/components/google-map.min.js"></script>
         <script type="text/javascript" src="js/components/wow.min.js"></script>
+
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Nov 24, 2018 14:30:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+                // Get todays date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="demo"
+                document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                    + minutes + "m " + seconds + "s ";
+
+                // If the count down is over, write some text
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
 
         <!--========== END JAVASCRIPTS ==========-->
 
