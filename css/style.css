@@ -810,7 +810,7 @@ fieldset[disabled] .s-btn {
 
 .s-promo-block-v2__form {
   position: absolute;
-  top: 50%;
+  top: 60%;
   right: 0;
   -webkit-transform: translate3d(0, -50%, 0);
   transform: translate3d(0, -50%, 0);
@@ -2494,4 +2494,9 @@ width: 40rem;
 }
 .logo_1{
   width: 60%;
+}
+@media (min-width: 34em) {
+  .g-padding-y-125--sm{
+    padding-top: 12.8125rem;
+  }
 }
